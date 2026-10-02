@@ -1,6 +1,6 @@
 # FFmpeg Optimizer
 
-A lightweight video optmizer written in Python that uses FFmpeg to compress video files while keeping good visual quality.
+A lightweight video optimizer written in Python that uses FFmpeg to compress video files while keeping good visual quality.
 
 ## Features
 

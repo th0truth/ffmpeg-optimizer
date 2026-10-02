@@ -2,7 +2,7 @@ from typing import Literal, get_args
 from pathlib import Path
 import subprocess
 import argparse
-import logger
+import logging
 import sys
 
 from config import (
@@ -10,6 +10,10 @@ from config import (
     FFMPEG_PRESET,
     FFMPEG_PRESETS
 ) 
+
+
+logging.basicConfig(level=logging.INFO, format=LOGGER_FORMAT)
+logger = logging.getLogger(__name__)
 
 
 def build_cmd(
@@ -115,7 +119,7 @@ def main():
 
     if not optimizer(args.filename, args.output, args.crf, args.preset):
         sys.exit(1)
-i
+
 
 if __name__ == "__main__":
     main()
