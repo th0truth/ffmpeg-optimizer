@@ -29,6 +29,12 @@ sudo apt install ffmpeg
 sudo pacman -S ffmpeg
 ```
 
+```bash
+git clone https://github.com/th0truth/ffmpeg-optimizer.git
+
+cd ffmpeg-optimizer
+```
+
 ## Usage
 
 ```bash
